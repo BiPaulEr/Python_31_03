@@ -6,7 +6,8 @@ def generateur():
     print("Fin generateur")
 
 gen = generateur()
-
+print(gen) #<generator object generateur at 0x000001DC98D99A40>
+print(type(gen)) #<class 'generator'>
 for i in generateur():
     print(i)
 
