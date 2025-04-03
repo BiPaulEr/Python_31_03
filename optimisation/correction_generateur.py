@@ -20,12 +20,13 @@ for i1, i2 in zip(carre(maximum), carre_gen):
     print(i1, i2)
 
 #Exercice 3
-def fibonnaci():
+print("\n\fibo\n")
+def fibonnaci(max):
     a, b = 0, 1
-    while True:
+    for _ in range(0, max):
         yield a
         a, b = b, a+b
-        
-fib = fibonnaci()
-for i in range(0, 20):
-    print(next(fib))
+
+fib = fibonnaci(maximum)
+for i in fib:
+    print(i)
